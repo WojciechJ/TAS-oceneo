@@ -79,23 +79,36 @@ https://jsonplaceholder.typicode.com/users
 ### Strona
 - http://oceneo.herokuapp.com/
 
+Termin na stronie
 
 ##### Backend
 - [x] produkty
 - [x] opinie
 - [x] użytkownicy
 - [x] token
+- [ ] search
+
 
 ##### Frontend
 - [x] router-sciezki 
 - [x] strona startowa 
 - [x] ranking
+- [ ] search
+
+##### Wojtek
 - [ ] dodanie produktu
 - [ ] edycja produktu
 - [ ] usunięcie produktu
+
+##### Marcin
 - [ ] dodanie opinii
-- [ ] search bar
+- [ ] edycja opinii
+- [ ] usunięcie opinii
+
+##### Mateusz
 - [ ] dodanie użytkownika
+- [ ] edycja użytkownika
+- [ ] usunięcie użytkownika
 - [x] logowanie 
 - [x] wylogowanie użytkownika
 
