@@ -1,0 +1,59 @@
+
+
+
+
+
+.products, .shops, .companies{
+	margin-bottom:50px;
+}
+.container .products h4{
+	display:inline;
+}
+.container .products a:hover{
+	text-decoration:none;
+	color: #0ea6d1;
+}
+.container .products a{
+	color:black;
+}
+.container .shops a:hover{
+	text-decoration:none;
+	color: #0ea6d1;
+}
+.container .shops a{
+	color:black;
+}
+.container .shops h4{
+	display:inline;
+}
+.container .companies a:hover{
+	text-decoration:none;
+	color: #0ea6d1;
+}
+.container .companies a{
+	color:black;
+}
+.container .companies h4{
+	display:inline;
+}
+.container .product_gallery{
+	height:500px;
+	float:left;
+}
+.container .product_info{
+	padding:30px;
+	min-height:500px;
+	float:left;
+}
+.product_info>col-md-3{
+	float:left;
+}
+.container .comment_section{
+	width:99.9%;
+	min-height:100px;
+	height:auto;
+}
+
+
+
+/* Styles for the review section */
