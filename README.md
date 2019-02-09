@@ -129,9 +129,10 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - [ ] search
 
 ##### Wojtek
-- [ ] dodanie produktu
+- [x] dodanie produktu
 - [ ] edycja produktu
 - [ ] usunięcie produktu
+- [x] lista produktów użytkownika
 
 ##### Marcin
 - [ ] dodanie opinii
