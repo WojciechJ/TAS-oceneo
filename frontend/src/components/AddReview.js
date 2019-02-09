@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { withRouter } from 'react-router';
-import { LinkContainer } from 'react-router-bootstrap';
-class AddReviewButton extends Component {
+class AddReview extends Component {
 
   constructor(props) {
   super(props);
@@ -35,9 +34,13 @@ class AddReviewButton extends Component {
 
 	<div>
       {this.state.details.map(detail =>
-					<LinkContainer exact to={"/addreview/"+detail.id}>
-            <i className="far fa-comment-dots fa-3x login-button"></i> 
-					</LinkContainer>
+	<div className="container">
+        <div className="row">
+            <div id="parametr-1" className="col-3 bold">Nazwa:</div>
+            <div id="wartosc-1" className="col-sm"><p>{detail.name}</p></div>
+        </div>
+    </div>
+
 	)}
 
 </div>
@@ -45,4 +48,4 @@ class AddReviewButton extends Component {
 )}}
 
 
-export default withRouter(AddReviewButton);
+export default withRouter(AddReview);

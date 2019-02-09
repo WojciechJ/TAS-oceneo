@@ -90,7 +90,7 @@ class Api::ProductsController < ApplicationController
   end
 
   def product_access
-    !@product.allow_unauth
+    @product.allow_unauth
   end
 
 
@@ -102,6 +102,6 @@ class Api::ProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def product_params
-      params.require(:product).permit(:name, :description)
+      params.require(:product).permit(:name, :description, :image, :user_id)
     end
 end

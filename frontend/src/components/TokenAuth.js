@@ -12,6 +12,7 @@ import Footer from '../components/Footer.js';
 import Ranking from '../components/Ranking.js';
 import Profile from '../components/Profile.js';
 import AddProduct from '../components/AddProduct.js'
+import AddReview from '../components/AddReview.js'
 const Api = require('../lib/Api.js')
 
 
@@ -31,6 +32,7 @@ class TokenAuthComponent extends React.Component {
           <Route exact path="/" component={PageHome} />
           <Route exact path="/ranking" component={Ranking} />
           <Route path="/product/:product_id" component={ProductPage}/>
+          <Route path="/addreview/:product_id" component={AddReview}/>
 
           {!this.state.jwt &&
             <Route
@@ -75,7 +77,6 @@ class TokenAuthComponent extends React.Component {
 
   componentDidMount() {
     this.getUser()
-    this.getPages()
   }
 
   defaultState() {
@@ -87,7 +88,6 @@ class TokenAuthComponent extends React.Component {
       image: undefined,
       name: undefined,
       surname: undefined,
-      pages: []
     }
   }
 

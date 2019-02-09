@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { withRouter } from "react-router";
+import { withRouter } from 'react-router';
 class InfoSection extends Component {
 
   constructor(props) {
@@ -30,7 +30,6 @@ class InfoSection extends Component {
     if (this.state.loading) {
       return null
     }
-
         return(
 
 	<div>

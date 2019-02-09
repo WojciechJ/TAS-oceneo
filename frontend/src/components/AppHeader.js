@@ -14,6 +14,7 @@ class AppHeaderComponent extends Component {
 
 
         <Navbar color="faded" >
+        
           <NavbarBrand className="mr-auto"><span className="mainlogo"><h1>Oceneo</h1></span></NavbarBrand>
 
           <LinkContainer exact to="/">

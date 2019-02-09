@@ -3,7 +3,7 @@ import '../css/bootstrap.css';
 import '../css/custom.css';
 import InfoSection from '../components/InfoSection';
 import ReviewSection from '../components/ReviewSection';
-
+import AddReviewButton from '../components/AddReviewButton'
 class ProductPage extends Component {
   render() {
     return (
@@ -11,7 +11,7 @@ class ProductPage extends Component {
 		<div className="container products_page">
 			<InfoSection />
 			<ReviewSection />
-
+      <AddReviewButton />
 		</div>
 
     );

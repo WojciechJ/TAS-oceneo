@@ -72,7 +72,7 @@ class ReviewSection extends Component {
 
 )}
 
-{/*container products*/}</div>
+</div>
 
 )
 }

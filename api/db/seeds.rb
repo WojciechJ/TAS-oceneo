@@ -10,50 +10,58 @@ products = Product.create([
 	{
 	  name: "iPhone 8",
 	  description: "128GB, Space gray",
-	  allow_unauth: true,
-	  image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_13_13_44_35_578_01.jpg"
+	  allow_unauth: false,
+	  image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_13_13_44_35_578_01.jpg",
+		user_id: 1
 	},
   {
 		name: "Huawei P20",
     description: "128 GB, Twilight blue",
-  	allow_unauth: true,
-	  image:"https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/3/pr_2018_3_12_12_13_20_559_00.jpg"
+  	allow_unauth: false,
+	  image:"https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/3/pr_2018_3_12_12_13_20_559_00.jpg",
+		user_id: 1
   },
 	{
 		 name: "Samsung S9",
      description: "G8341 Black",
-	   allow_unauth: true,
-	   image:"https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/2/pr_2018_2_23_9_35_35_39_00.jpg"
+	   allow_unauth: false,
+	   image:"https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/2/pr_2018_2_23_9_35_35_39_00.jpg",
+		 user_id: 1
 	},
 	{
 	 name: "Xiaomi Pocophone F1",
 	 description: "6/128 GB Steel Blue",
-	 allow_unauth: true,
-	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/8/pr_2018_8_25_10_13_38_244_02.jpg"
+	 allow_unauth: false,
+	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/8/pr_2018_8_25_10_13_38_244_02.jpg",
+	 user_id: 1
 	},
 	{
 	 name: "Sony Xperia XZ1",
 	 description: "6/128 GB Steel Blue",
-	 allow_unauth: true,
-	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_1_13_10_59_282_00.jpg"
+	 allow_unauth: false,
+	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_1_13_10_59_282_00.jpg",
+	 user_id: 2
 	},
 	{
 	 name: "Xiaomi Redmi Note 5",
 	 description: "4/64GB Black",
-	 allow_unauth: true,
-	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/5/pr_2018_5_10_15_17_6_838_04.jpg"
+	 allow_unauth: false,
+	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/5/pr_2018_5_10_15_17_6_838_04.jpg",
+	 user_id: 2
 	},
 	{
 	 name: "Apple iPhone X",
 	 description: "64GB Space Gray",
-	 allow_unauth: true,
-	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_13_14_35_15_245_01.jpg"
+	 allow_unauth: false,
+	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/9/pr_2017_9_13_14_35_15_245_01.jpg",
+	 user_id: 2
 	},
 	{
 	 name: "OnePlus 6",
 	 description: "8/128GB Dual SIM",
-	 allow_unauth: true,
-	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/5/pr_2018_5_22_12_42_21_122_00.jpg"
+	 allow_unauth: false,
+	 image: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2018/5/pr_2018_5_22_12_42_21_122_00.jpg",
+	 user_id: 2
 	}
 
 		])

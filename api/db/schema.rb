@@ -12,21 +12,13 @@
 
 ActiveRecord::Schema.define(version: 20190126185402) do
 
-  create_table "pages", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.boolean "allow_unauth"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["title"], name: "index_pages_on_title", unique: true
-  end
-
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.string "image"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image"
     t.boolean "allow_unauth"
   end
 
