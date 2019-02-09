@@ -126,6 +126,8 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - [x] router-sciezki 
 - [x] strona startowa 
 - [x] ranking
+- [x] logowanie 
+- [x] wylogowanie użytkownika
 - [ ] search
 
 ##### Wojtek
@@ -138,13 +140,13 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - [ ] dodanie opinii
 - [ ] edycja opinii
 - [ ] usunięcie opinii
+- [ ] lista opinii
 
 ##### Mateusz
 - [ ] dodanie użytkownika
 - [ ] edycja użytkownika
 - [ ] usunięcie użytkownika
-- [x] logowanie 
-- [x] wylogowanie użytkownika
+
 
 ### Punktacja
 
