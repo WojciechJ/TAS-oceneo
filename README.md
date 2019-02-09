@@ -18,44 +18,90 @@ od warstwy webowej i biznesowej (tj. nie korzystamy z baz „osadzonych”).
 - 10.12 Jagodziński Wojciech
 - 17.12 Marcin Mirecki
 - 28.01.2019 Prezentacja zespołowa
+### Termin poprawy
+- 2019-02-13 11:30 pokój B3-19
 
-### Uruchomienie aplikacji
-Polecenie
+## Uruchomienie:
+### Linux
+#### Frontend
+Przechodzimy do lokalizacji katalogu projektu w terminalu (.../Tas-oceneo/frontend) i wpisujemy
+```
+npm install
+```
+W przypadku braku npm terminal podpowiada co wpisać.
+
+Npm zainstaluje moduły, które są zawarte w package.json.
+Żeby zrestartować całkowicie instalację trzeba usunąć node_modules i package.json.lock i jeszcze raz wpisać npm install
+
+Uruchomienie
 ```
 npm start
 ```
-w katalogu oceneo-client uruchamia tryb development na localhost:3001.
+Npm uruchamia wersje developerską na localhost. Do wyboru jest konsola w przeglądarce
 ```
-npm install
+http://localhost:8000/webpack-dev-server/
 ```
-### Uruchomienie na wydziale (w przypadku błędu z wersjami webpack'a)
+Albo konsola w terminalu
+```
+http://localhost:8000/
+```
+Konsola w terminalu wyświetla błędy, ale nie pokazuje tego na stronie, kóra ładuje ostatnią działająca wersję. Konsola w przeglądarce nie pokazuje ścieżki.
+#### Backend 
+nie wiem, robiłem na win ale będzie podobnie jeśli nie tak samo, tylko więcej instalowania i nie ma wszystkiego w fajnym exe
+### Windows
+Instalujemy node i cmd with ruby and rails
+- https://nodejs.org/dist/v10.15.1/node-v10.15.1-x64.msi
+- https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.4.0.exe
+#### Frontend tak samo jak Linux
+#### Backend 
+Nie pamiętam jak była kolejność i błędy, ale
 
-Open cmd on the node-modules folder outside of your project folder
+Instalacja jednego modułu
+```
+gem install nazwa
+```
+Instalacja wszystkich modułów, które używamy (plik Gemfile)
+```
+bundle install
+```
+Jak nie ma bundlera to
+```
+gem install bundler
+```
+Jak czegoś jeszcze nie ma to podpowiada
 
-Uninstall webpack and webpack-dev-server:
+Uruchomienia servera
 ```
-npm uninstall webpack
-npm uninstall webpack-dev-server
+rails s
 ```
-Delete the node-modules folder and the package-lock.json file from your project's folder.
+Jak wywala błąd, że server chodzi to wystarczy usunąć plik server.pid w ../tmp/pids/
 
-Open the node-modules again
+Server dostępny jest pod adresem
 ```
-npm install webpack@4.19.1
-npm install webpack-dev-server@3.1.9
+http://localhost:3000/
 ```
-Use this command on your project folder
+Można przeczytać błędy jak coś nie działa. Normalnie wyświetla "Yay! You’re on Rails!".
+
+### Jeżeli baza jest pusta
+Wypełnienie bazy jak nie ma rekordów, albo chcemy reset etc. Server musi być wyłączony.
+
+W katalogu ../api/db usuwamy pliki
 ```
-npm install
+schema.rb
+development.sqlite3
 ```
-Zmienić w package.json 'set PORT' na: (u mnie musi być 'set PORT # &&' bo inaczej nie działa)
+Plik seeds.rb zawiera nasze startowe dane
+
+Tworzymy jeszcze raz tabele:
 ```
-PORT=3001 react-scripts start
+rake db:migrate
 ```
-W przeglądarce:
+Wsadzamy dane startowe:
 ```
-http://localhost:3001
+rake db:seed
 ```
+### Na wydziale
+Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić ze względu na nokogiri, które usilnie chce swojej ścieżki na dysku C, inne moduły się zainstalowały w katalogu domowym, ale nic to nie da bo wszystko musi działać. Jedyna opcja to zrobić maszynę wirtualną z linuksem ( bo szybciej sie instaluje) i tam pokazać, albo próbować dalej(szkoda czasu wdg mnie). Inaczej to pulpit zdalny albo wirtualna z windowsem. Jak sie zainstaluje na poligonie w dzień prezentacji to nie trzeba się martwić miejscem (kolejnego dnia zniknie btw)
 
 ### Przydatne strony
 - https://alligator.io/react/axios-react/
@@ -67,19 +113,6 @@ http://localhost:3001
 - https://codesandbox.io/s/6v59yv2zl3 (serach bar example)
 - https://medium.com/@iamjane/devise-with-react-webpacker-and-rails-dacbf9ae0233
 
-#### Nasze api
-```
-http://oceneo-api.herokuapp.com/api/products.json
-http://oceneo-api.herokuapp.com/api/products/<id>/rates.json
-```
-##### Przykladowe api
-```
-https://jsonplaceholder.typicode.com/users
-```
-### Strona
-- http://oceneo.herokuapp.com/
-
-Termin na stronie
 
 ##### Backend
 - [x] produkty
