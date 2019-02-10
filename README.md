@@ -113,6 +113,7 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - https://codesandbox.io/s/6v59yv2zl3 (serach bar example)
 - https://medium.com/@iamjane/devise-with-react-webpacker-and-rails-dacbf9ae0233
 
+### Podstawka
 
 ##### Backend
 - [x] produkty
@@ -120,7 +121,6 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - [x] użytkownicy
 - [x] token
 - [ ] search
-
 
 ##### Frontend
 - [x] router-sciezki 
@@ -130,10 +130,12 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 - [x] wylogowanie użytkownika
 - [ ] search
 
+### Podprojekty
+
 ##### Wojtek
 - [x] dodanie produktu
 - [ ] edycja produktu
-- [ ] usunięcie produktu
+- [x] usunięcie produktu
 - [x] lista produktów użytkownika
 
 ##### Marcin
