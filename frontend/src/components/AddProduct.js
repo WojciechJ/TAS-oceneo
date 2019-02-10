@@ -38,7 +38,7 @@ class AddProduct extends Component {
 	  description: this.state.description,
 	  image: this.state.image,
 	  product_id: this.state.product_id,
-		user_id: this.props.appState.id
+		user_id: this.props.appState.user_id
     };
 
 	axios.post(`http://localhost:3000/api/products`, { product })

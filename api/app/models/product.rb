@@ -1,3 +1,4 @@
 class Product < ApplicationRecord
-  has_many :rates
+  belongs_to :user, optional: true
+  has_many :rates, :dependent => :destroy
 end
