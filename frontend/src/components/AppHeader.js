@@ -14,7 +14,7 @@ class AppHeaderComponent extends Component {
 
 
         <Navbar color="faded" >
-        
+
           <NavbarBrand className="mr-auto"><span className="mainlogo"><h1>Oceneo</h1></span></NavbarBrand>
 
           <LinkContainer exact to="/">
@@ -34,6 +34,11 @@ class AppHeaderComponent extends Component {
             {this.props.appState.jwt &&
               <LinkContainer exact to="/profile">
                   <i className="fas fa-user fa-2x login-button"></i>
+              </LinkContainer>
+            }
+            {this.props.appState.jwt &&
+              <LinkContainer exact to={"/myproducts/"+this.props.appState.user_id}>
+                  <i className="fas fa-list fa-2x login-button"></i>
               </LinkContainer>
             }
             {this.props.appState.jwt &&

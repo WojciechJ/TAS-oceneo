@@ -8,11 +8,14 @@ import AuthSignIn from './AuthSignIn.js'
 import AuthSignOut from './AuthSignOut.js'
 import PageHome from './PageHome.js'
 import ProductPage from '../components/ProductPage.js'
+import MyProducts from '../components/MyProducts.js'
 import Footer from '../components/Footer.js';
 import Ranking from '../components/Ranking.js';
 import Profile from '../components/Profile.js';
 import AddProduct from '../components/AddProduct.js'
 import AddReview from '../components/AddReview.js'
+import EditProduct from '../components/EditProduct.js'
+
 const Api = require('../lib/Api.js')
 
 
@@ -64,6 +67,22 @@ class TokenAuthComponent extends React.Component {
               exact path="/profile"
               render={(routeProps) => (
                 <Profile {...routeProps} appState={this.state} />
+              )}
+            />
+          }
+          {this.state.jwt &&
+            <Route
+              exact path="/myproducts/:user_id"
+              render={(routeProps) => (
+                <MyProducts {...routeProps} appState={this.state} />
+              )}
+            />
+          }
+          {this.state.jwt &&
+            <Route
+              exact path="/editproduct/:product_id"
+              render={(routeProps) => (
+                <EditProduct {...routeProps} appState={this.state} />
               )}
             />
           }

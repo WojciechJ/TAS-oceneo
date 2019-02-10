@@ -297,6 +297,15 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
     font-weight: bold;
     color: #58595a;
 }
+.gallery-container-small{
+text-align: center;
+	width:50px;
+}
+.product-list{
+
+	margin-left:10%;
+
+}
 .gallery-container p.page-description {
     text-align: center;
     margin: 30px auto;

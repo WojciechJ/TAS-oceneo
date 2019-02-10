@@ -6,7 +6,7 @@ resources :products,  except: [:new, :edit]do
 resources :rates
 end
 resources :ranking
-
+resources :userproducts
 
 end
 end
