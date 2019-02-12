@@ -134,7 +134,7 @@ Front się uruchomi i na win i na linux, backendu nie udało mi się uruchomić 
 
 ##### Wojtek
 - [x] dodanie produktu
-- [ ] edycja produktu
+- [x] edycja produktu
 - [x] usunięcie produktu
 - [x] lista produktów użytkownika
 
